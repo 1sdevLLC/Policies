@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support &mdash; {{BRAND_NAME}}</title>
+<meta name="description" content="Get help with {{BRAND_NAME}} apps: contact us, manage subscriptions, restore purchases, and request data deletion.">
+<link rel="canonical" href="https://{{DOMAIN}}/support.html">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+{{HEADER}}
+<main>
+  <h1>Support</h1>
+  <p>We're happy to help with {{APP_NAMES}}. Email us at
+     <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a> and we'll reply {{RESPONSE_TIME}}.</p>
+  <div class="note">
+    <strong>Reporting a bug?</strong> Please include: the app name and version, your iPhone/iPad model, your iOS version,
+    what you expected to happen, what actually happened, and screenshots if you can. Please don't send passwords or sensitive personal information by email.
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+{{#if has_subscriptions}}
+  <details>
+    <summary>How do I restore my purchases?</summary>
+    <p>Open the app, go to Settings (or the paywall screen), and tap <strong>Restore Purchases</strong>. Make sure you're signed in to the same Apple ID you used to buy. If it still doesn't work, email us with your Apple receipt or order number.</p>
+  </details>
+  <details>
+    <summary>How do I cancel or manage my subscription?</summary>
+    <p>Subscriptions are billed and managed by Apple, not by us. On your iPhone or iPad, open <strong>Settings &rarr; [your name] &rarr; Subscriptions</strong>, choose the subscription, and tap <strong>Cancel Subscription</strong>. You can also manage subscriptions from the App Store app (tap your profile picture &rarr; Subscriptions). Cancel at least 24 hours before the renewal date to avoid being charged for the next period. You'll keep access until the end of the period you've paid for.</p>
+  </details>
+  <details>
+    <summary>How do I request a refund?</summary>
+    <p>Refunds for App Store purchases are handled by Apple. Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in with your Apple ID, and choose the purchase you'd like to report. We can't issue refunds directly because Apple processes all payments, but we're happy to help if you run into trouble.</p>
+  </details>
+  <details>
+    <summary>I was charged but my purchase isn't unlocked.</summary>
+    <p>First try <strong>Restore Purchases</strong> in the app. Then force-quit and reopen the app with an internet connection. If the problem continues, email us your Apple order number and we'll investigate.</p>
+  </details>
+{{/if}}
+  <details>
+    <summary>How do I delete my data{{#if has_accounts}} or my account{{/if}}?</summary>
+    <p>{{#if has_accounts}}You can delete your account inside the app under <strong>Settings &rarr; Account &rarr; Delete Account</strong>. This permanently deletes your account and the personal data associated with it, subject to limited data we must keep by law.{{else}}Most content you create in our apps is stored only on your device, so deleting the app removes it.{{/if}}
+       For anything else, or if you'd like us to delete information we hold about you, email <a href="mailto:{{PRIVACY_EMAIL}}">{{PRIVACY_EMAIL}}</a>. See our <a href="/privacy.html">Privacy Policy</a> for details.</p>
+  </details>
+  <details>
+    <summary>How do I make a privacy request (access, correction, deletion)?</summary>
+    <p>Email <a href="mailto:{{PRIVACY_EMAIL}}">{{PRIVACY_EMAIL}}</a> with your request and the email address associated with your use of the app, if any. We respond within 45 days. See the <a href="/privacy.html">Privacy Policy</a>.</p>
+  </details>
+  <details>
+    <summary>Which devices and iOS versions are supported?</summary>
+    <p>The minimum iOS version and supported devices are listed on each app's App Store page under <strong>Compatibility</strong>.</p>
+  </details>
+  <details>
+    <summary>I have a feature request or feedback.</summary>
+    <p>We'd love to hear it. Email <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a>. You can also leave a rating or review on the App Store, which helps other people find the app.</p>
+  </details>
+  <details>
+    <summary>I'm having trouble using the app with accessibility features.</summary>
+    <p>We want our apps to work for everyone. If something doesn't work with VoiceOver, Dynamic Type, Voice Control, or another accessibility feature, please tell us at <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a> and we'll work to fix it.</p>
+  </details>
+{{#if has_health_data}}
+  <details>
+    <summary>Is this app a substitute for medical advice?</summary>
+    <p>No. Our apps are for informational and wellness purposes and are not medical devices unless the app clearly says otherwise. They don't diagnose, treat, cure, or prevent any condition. Always talk to a qualified healthcare professional about medical decisions. In an emergency, call 911 (or your local emergency number).</p>
+  </details>
+{{/if}}
+
+  <h2>Company information</h2>
+  <p>{{LLC_NAME}}<br>{{MAILING_ADDRESS}}<br><a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>{{#if phone_present}}<br>{{PHONE}}{{/if}}</p>
+</main>
+{{FOOTER}}
+</body>
+</html>

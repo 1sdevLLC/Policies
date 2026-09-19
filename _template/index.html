@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{BRAND_NAME}} &mdash; {{TAGLINE}}</title>
+<meta name="description" content="{{BRAND_NAME}}: {{TAGLINE}}. Apps: {{APP_NAMES}}.">
+<link rel="canonical" href="https://{{DOMAIN}}/">
+<meta property="og:title" content="{{BRAND_NAME}}">
+<meta property="og:description" content="{{TAGLINE}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://{{DOMAIN}}/">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+{{HEADER}}
+<main>
+  <section class="hero">
+    <h1>{{BRAND_NAME}}</h1>
+    <p class="lead">{{TAGLINE}}</p>
+  </section>
+
+  <h2>Our apps</h2>
+  <div class="cards">
+{{APP_CARDS}}  </div>
+
+  <h2>Support &amp; contact</h2>
+  <p>Questions, feedback, or a problem with an app? Visit our <a href="/support.html">support page</a> or email
+     <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a>. For general inquiries: <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>.</p>
+
+  <h2>Legal</h2>
+  <p><a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Use</a>{{#if include_health_policy}} &middot; <a href="/health-privacy.html">Consumer Health Data Privacy Policy</a>{{/if}}</p>
+  <p class="fine">{{BRAND_NAME}} is operated by {{LLC_NAME}}, a California limited liability company.</p>
+</main>
+{{FOOTER}}
+</body>
+</html>

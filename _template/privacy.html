@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; {{BRAND_NAME}}</title>
+<meta name="description" content="How {{LLC_NAME}} collects, uses, and protects information in its apps and on this website.">
+<link rel="canonical" href="https://{{DOMAIN}}/privacy.html">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+{{HEADER}}
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: {{EFFECTIVE_DATE}} &middot; Last updated: {{TODAY}}</p>
+
+  <p>This Privacy Policy explains how {{LLC_NAME}} ("<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>") handles information when you use our iPhone and iPad apps ({{APP_NAMES}}) and this website, {{DOMAIN}} (together, the "<strong>Services</strong>"). We aim to collect as little information as we need and to be clear about what we do with it.</p>
+
+  <h2>1. Who we are and how to reach us</h2>
+  <p>{{LLC_NAME}}, a California limited liability company.<br>
+     {{MAILING_ADDRESS}}<br>
+     Privacy questions and requests: <a href="mailto:{{PRIVACY_EMAIL}}">{{PRIVACY_EMAIL}}</a></p>
+
+  <h2>2. Information we collect</h2>
+  <h3>Information stored on your device</h3>
+  <p>{{#if has_backend}}Some content you create in our apps is stored on your device, and some is sent to our servers as described below.{{else}}Content you create and settings you choose in our apps are stored on your device. We do not receive this content unless you choose to send it to us (for example, in a support email).{{/if}}</p>
+
+{{#if accesses_photos}}
+  <h3>Photos and media</h3>
+  <p>{{PHOTOS_DESCRIPTION}}</p>
+{{/if}}
+{{#if has_accounts}}
+  <h3>Account information</h3>
+  <p>If you create an account, we collect the information you provide, such as your email address, name or username, and a password (stored in hashed form) or the identifier provided by Sign in with Apple. If you use Sign in with Apple's "Hide My Email" option, we receive only Apple's private relay address.</p>
+{{/if}}
+{{#if has_backend}}
+  <h3>Data processed on our servers</h3>
+  <p>To provide the features of our apps, we store and process the app content and settings you choose to sync or submit. This data is encrypted in transit and stored with our cloud infrastructure providers described in Section 5.</p>
+{{/if}}
+{{#if has_subscriptions}}
+  <h3>Purchase information</h3>
+  <p>Purchases and subscriptions are processed by Apple through the App Store. We do <strong>not</strong> receive or store your payment card or billing details. Apple gives us limited information such as the product purchased, transaction identifiers, and subscription status, so that we can unlock features and provide support.</p>
+{{/if}}
+{{#if has_analytics}}
+  <h3>Usage and diagnostic information</h3>
+  <p>{{ANALYTICS_DESCRIPTION}}</p>
+{{/if}}
+  <h3>Information from Apple</h3>
+  <p>If you choose to share app analytics or crash reports with developers through your iOS settings, Apple provides us with aggregated, anonymized statistics (for example, number of downloads, sessions, and crashes). We can't identify you from this information.</p>
+  <h3>Information you send us</h3>
+  <p>If you contact us, we receive your email address and whatever you include in your message, and we keep the correspondence so we can help you and improve our Services.</p>
+  <h3>Website</h3>
+  <p>This website is hosted by GitHub Pages. GitHub may collect technical information such as IP addresses and browser type in its server logs, under its own <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. {{#if website_analytics}}We also use website analytics to understand how visitors use our site.{{else}}We do not use cookies, advertising trackers, or analytics on this website.{{/if}}</p>
+{{#if has_health_data}}
+  <h3>Health data you authorize</h3>
+  <p>Some of our apps can read from (and write to) Apple Health through Apple's HealthKit only if you grant permission. See the “Health and fitness data” section below and our <a href="/health-privacy.html">Consumer Health Data Privacy Policy</a>.</p>
+{{/if}}
+
+  <h2>3. How we use information</h2>
+  <ul>
+    <li>To provide, operate, and maintain the Services and the features you request;</li>
+{{#if has_subscriptions}}
+    <li>To verify purchases and manage subscription access;</li>
+{{/if}}
+    <li>To respond to your questions and provide support;</li>
+    <li>To diagnose problems, fix bugs, and improve the Services;</li>
+    <li>To protect the security and integrity of the Services, and to prevent fraud and abuse;</li>
+    <li>To comply with law and enforce our <a href="/terms.html">Terms of Use</a>.</li>
+  </ul>
+  <p>We do not use your information for advertising, and we do not build advertising profiles.</p>
+
+  <h2>4. We do not sell or share your information for advertising</h2>
+  <p>We do <strong>not</strong> sell your personal information, and we do <strong>not</strong> "share" it for cross-context behavioral advertising as those terms are defined under California law. We do not track you across other companies' apps or websites, so our apps do not show the App Tracking Transparency prompt.</p>
+
+  <h2>5. How we disclose information</h2>
+  <p>We disclose personal information only in these limited circumstances:</p>
+  <ul>
+    <li><strong>Service providers</strong> that process information on our behalf under contract, such as cloud hosting, email delivery, and crash reporting providers, and only for the purposes described in this policy. {{#if has_backend}}Our current providers include: {{SERVICE_PROVIDERS}}.{{/if}}</li>
+    <li><strong>Apple</strong>, in connection with distributing the app, processing purchases, and Sign in with Apple, under Apple's own policies.</li>
+    <li><strong>Legal and safety reasons</strong>, when we believe in good faith that disclosure is required by law, subpoena, or legal process, or is needed to protect the rights, property, or safety of us, our users, or others.</li>
+    <li><strong>Business transfers</strong>, such as a merger, acquisition, or sale of assets, in which case we'll require the recipient to honor this policy or notify you of changes.</li>
+    <li>With your <strong>consent</strong> or at your direction.</li>
+  </ul>
+
+  <h2>6. Retention</h2>
+  <p>We keep personal information only as long as needed for the purposes described above, to comply with legal obligations, resolve disputes, and enforce our agreements. Support emails are generally kept for up to two years{{#if has_accounts}}; account data is deleted when you delete your account, except for limited records we must retain by law{{/if}}. Data stored only on your device is controlled by you and is removed when you delete the app.</p>
+
+  <h2>7. Security</h2>
+  <p>We use reasonable technical and organizational measures to protect information, including encryption in transit{{#if has_backend}} and restricted access to our systems{{/if}}. No method of storage or transmission is 100% secure, and we can't guarantee absolute security. If we learn of a data breach that affects you, we'll notify you and the appropriate authorities as required by law.</p>
+
+  <h2>8. Your privacy rights and choices</h2>
+  <p>Depending on where you live, you may have the right to:</p>
+  <ul>
+    <li><strong>Know/access</strong> the personal information we hold about you;</li>
+    <li><strong>Correct</strong> inaccurate information;</li>
+    <li><strong>Delete</strong> your personal information;</li>
+    <li>Receive a <strong>portable copy</strong> of your information;</li>
+    <li><strong>Opt out</strong> of the sale or sharing of personal information and of targeted advertising (we do neither);</li>
+    <li>Limit the use of sensitive personal information; and</li>
+    <li>Not be <strong>discriminated against</strong> for exercising these rights.</li>
+  </ul>
+  <p>To make a request, email <a href="mailto:{{PRIVACY_EMAIL}}">{{PRIVACY_EMAIL}}</a>. We may need to verify your identity, for example by matching details you give us to information we already hold. You can use an authorized agent to make a request on your behalf, and we may ask for written proof of authorization. We'll respond within 45 days (we may extend once by another 45 days if we tell you why). If we deny your request, you may appeal by replying to our response, and you may also contact your state attorney general. We honor these rights for all users, regardless of state, to the extent we hold personal information about you.{{#if has_accounts}} You can also delete your account inside the app.{{/if}}</p>
+
+  <h2>9. Additional information for California residents</h2>
+  <p>This section supplements the above for California residents under the California Consumer Privacy Act as amended by the CPRA ("<strong>CCPA</strong>"). In the past 12 months, we have collected the following categories of personal information:</p>
+  <table>
+    <tr><th>Category</th><th>Examples</th><th>Purpose</th><th>Disclosed to</th></tr>
+    <tr><td>Identifiers</td><td>Email address (if you contact us{{#if has_accounts}} or create an account{{/if}})</td><td>Support, communications{{#if has_accounts}}, account management{{/if}}</td><td>Service providers</td></tr>
+{{#if has_subscriptions}}
+    <tr><td>Commercial information</td><td>Products purchased, subscription status (via Apple)</td><td>Unlocking features, support</td><td>Apple</td></tr>
+{{/if}}
+{{#if has_analytics}}
+    <tr><td>Internet or device activity</td><td>App usage events, crash logs, device model, OS version</td><td>Diagnostics and improvement</td><td>Service providers</td></tr>
+{{/if}}
+{{#if has_health_data}}
+    <tr><td>Sensitive personal information</td><td>Health and fitness data you authorize us to read (see below)</td><td>Providing health features you request</td><td>Not disclosed to third parties</td></tr>
+{{/if}}
+  </table>
+  <p>We do not sell or share personal information, and we have not done so in the past 12 months. We use sensitive personal information only to provide the services you request, and not to infer characteristics about you. We do not knowingly sell or share the personal information of consumers under 16.</p>
+  <p><strong>Shine the Light (Cal. Civ. Code &sect; 1798.83):</strong> we do not disclose personal information to third parties for their direct marketing purposes.</p>
+  <p><strong>Do Not Track:</strong> because we do not track you across websites or apps over time, we do not respond differently to "Do Not Track" browser signals.</p>
+
+{{#if has_health_data}}
+  <h2>Health and fitness data</h2>
+  <p>Some of our apps can read data from Apple Health (HealthKit) <em>only after you grant permission</em>, and only the data types you approve. You can change or revoke access at any time in <strong>Settings &rarr; Health &rarr; Data Access &amp; Devices</strong>. We:</p>
+  <ul>
+    <li>use this data only to provide the health and fitness features you request (or approved health research);</li>
+    <li>do <strong>not</strong> use it for advertising, marketing, or data mining, and do not sell it;</li>
+    <li>do <strong>not</strong> disclose it to third parties without your explicit consent, except as required by law; and</li>
+    <li>do <strong>not</strong> store it in iCloud.</li>
+  </ul>
+  <p>For details, including rights under state consumer-health-data laws, see our <a href="/health-privacy.html">Consumer Health Data Privacy Policy</a>. Our apps are not medical devices and do not provide medical advice.</p>
+{{/if}}
+
+{{#if eu_users}}
+  <h2>Users in the European Economic Area, United Kingdom, and Switzerland</h2>
+  <p>{{LLC_NAME}} is the controller of personal data processed through the Services. Our legal bases are: performance of a contract (providing the Services you request), our legitimate interests (security, diagnostics, improving the Services), compliance with legal obligations, and consent where required (which you can withdraw at any time). We are located in the United States, so your data may be transferred to and processed in the U.S.; where required, we rely on appropriate safeguards such as standard contractual clauses. You have the rights described in Section 8 and may also object to or restrict processing. You can lodge a complaint with your local data protection authority.</p>
+{{/if}}
+
+  <h2>Children's privacy</h2>
+  <p>Our Services are not directed to children under 13 (or under 16 in the EEA/UK), and we do not knowingly collect personal information from them. If you believe a child has provided us personal information, email <a href="mailto:{{PRIVACY_EMAIL}}">{{PRIVACY_EMAIL}}</a> and we will delete it.</p>
+
+  <h2>Third-party services and links</h2>
+  <p>Our Services rely on Apple's platform and may link to third-party sites. Their handling of information is governed by their own policies, and we're not responsible for them. See <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy from time to time. We'll post the updated version here and update the "Last updated" date. If we make material changes, we'll give additional notice (for example, in the app or by email) before they take effect where required by law.</p>
+
+  <h2>Contact us</h2>
+  <p>{{LLC_NAME}}<br>{{MAILING_ADDRESS}}<br><a href="mailto:{{PRIVACY_EMAIL}}">{{PRIVACY_EMAIL}}</a></p>
+</main>
+{{FOOTER}}
+</body>
+</html>

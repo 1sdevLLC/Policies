@@ -1,0 +1,43 @@
+{
+  "llc_name": "1s Development LLC",
+  "brand_name": "1s Development",
+  "tagline": "Simple, useful apps for your iPhone",
+  "domain": "www.1sdevelopmentllc.com",
+  "contact_email": "support@1sdevelopmentllc.com",
+  "support_email": "support@1sdevelopmentllc.com",
+  "privacy_email": "support@1sdevelopmentllc.com",
+  "mailing_address": "2106 E 20th St, Santa Ana, CA 92705",
+  "phone": "",
+  "county": "Orange",
+  "effective_date": "September 18, 2026",
+  "response_time": "within 2 business days",
+  "apps": [
+    {
+      "name": "PicSnip",
+      "tagline": "Clean up your photos",
+      "description": "PicSnip helps you clean up and organize your photo library, right on your iPhone.",
+      "app_store_url": ""
+    }
+  ],
+  "flags": {
+    "has_accounts": true,
+    "has_backend": true,
+    "has_analytics": true,
+    "has_subscriptions": true,
+    "has_user_content": true,
+    "has_health_data": false,
+    "website_analytics": false,
+    "eu_users": true,
+    "include_health_policy": false,
+    "hipaa_covered": false,
+    "accesses_photos": true
+  },
+  "analytics_description": "We use analytics and crash-reporting tools to collect anonymized usage events (such as screens viewed and features used), device model, iOS version, and crash reports, so we can fix bugs and improve the app. This data is not used to track you across other companies' apps or websites.",
+  "health": {
+    "data_types": "YOUR LIST, e.g. step count, heart rate, sleep analysis (read from Apple Health with your permission)",
+    "purposes": "YOUR PURPOSES, e.g. to show you trends and insights inside the app",
+    "third_parties": "None. We do not share consumer health data with third parties."
+  },
+  "service_providers": "cloud hosting, analytics, and crash-reporting providers",
+  "photos_description": "PicSnip asks for access to your photo library so you can review, organize, and clean up your photos. You choose which photos the app can access (including limiting access to selected photos) and can change this at any time in Settings > Privacy & Security > Photos. Your photos are processed on your device and are not uploaded to our servers."
+}
