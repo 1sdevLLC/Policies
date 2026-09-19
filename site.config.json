@@ -20,24 +20,25 @@
     }
   ],
   "flags": {
-    "has_accounts": true,
-    "has_backend": true,
-    "has_analytics": true,
+    "has_accounts": false,
+    "has_backend": false,
+    "has_analytics": false,
     "has_subscriptions": true,
-    "has_user_content": true,
+    "has_user_content": false,
     "has_health_data": false,
     "website_analytics": false,
     "eu_users": true,
     "include_health_policy": false,
     "hipaa_covered": false,
-    "accesses_photos": true
+    "accesses_photos": true,
+    "deletes_photos": true
   },
-  "analytics_description": "We use analytics and crash-reporting tools to collect anonymized usage events (such as screens viewed and features used), device model, iOS version, and crash reports, so we can fix bugs and improve the app. This data is not used to track you across other companies' apps or websites.",
+  "analytics_description": "",
   "health": {
     "data_types": "YOUR LIST, e.g. step count, heart rate, sleep analysis (read from Apple Health with your permission)",
     "purposes": "YOUR PURPOSES, e.g. to show you trends and insights inside the app",
     "third_parties": "None. We do not share consumer health data with third parties."
   },
-  "service_providers": "cloud hosting, analytics, and crash-reporting providers",
+  "service_providers": "",
   "photos_description": "PicSnip asks for access to your photo library so you can review, organize, and clean up your photos. You choose which photos the app can access (including limiting access to selected photos) and can change this at any time in Settings > Privacy & Security > Photos. Your photos are processed on your device and are not uploaded to our servers."
 }
